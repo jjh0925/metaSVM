@@ -1,0 +1,12 @@
+Package: metaSVM
+Type: Package
+Title: Meta-analytic Framework Based on Support Vector Machine
+Version: 1.0
+Date: 2016-09-28
+Author: SungHwan Kim, JungJun Lee, Jae-Hwan Jhong, Ja-Yong Koo
+Maintainer: SungHwan Kim <swiss747@korea.ac.kr>
+Description: This package contains functions for metaSVM.
+License: GPL (>= 2)
+LazyData: TRUE
+Imports: foreach, MCMCpack, glmnet, penalized, e1071
+URL: https://sites.google.com/site/sunghwanshome/
