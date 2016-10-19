@@ -20,4 +20,22 @@ We particularly adopts the sparse group lasso enabling to capture both common an
 SungHwan Kim, JungJun Lee, Jae-Hwan Jhong, Ja-Yong Koo
 }
 \seealso{\code{\link{SETUP}}}
+\examples{
+library(metaSVM)
+fpath = system.file("extdata", "DList_lung_svm.Rdata", package="metaSVM")
+DList = get(load(fpath))
+Y = list()
+for (k in 1:length(DList))
+{
+   tmp = as.numeric(rownames(DList[[k]]) == "1")
+   tmp[tmp == 0] = -1
+   Y[[k]] = tmp
+}
+for(i in 1:length(DList))
+   rownames(DList[[i]]) = 1:dim(DList[[i]])[1]
+sm = SETUP(X = DList, Y = Y, lambda1 = 0.1, lambda2 = 0.1)
+Res = iSVM(sm, is.constant = TRUE)
+}
+
+
 
