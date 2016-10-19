@@ -10,14 +10,14 @@
    \item{lambda2}{A tuning parameter controls the second penalty term (L1-lasso)}
 }
 \value{
-\item{sm}{A list contains a basic information about model.}
+\item{sm}{A list contains all related objects to implement the Meta-SVM.}
 }
 \description{
-This function generates a basic list from data sets to perform
-meta-SVM.
+This function generates a list containing
+all relevant objects to perform the meta-SVM.
 }
 \author{
-SungHwan Kim, JungJun Lee, Jae-Hwan Jhong, Ja-Yong Koo
+SungHwan Kim, Jae-Hwan Jhong, JungJun Lee, Ja-Yong Koo
 }
 \seealso{\code{\link{iSVM}}}
 
